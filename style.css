@@ -48,10 +48,10 @@ header {
   justify-content: space-between;
 }
 
-header a{
-    text-decoration: none;
-    color: #fff;
-    align-self: center;
+header a {
+  text-decoration: none;
+  color: #fff;
+  align-self: center;
 }
 
 nav {
@@ -72,7 +72,6 @@ nav a {
   margin-bottom: 15px;
 }
 
-
 .social-media-icons {
   list-style-type: none;
   display: flex;
@@ -80,10 +79,9 @@ nav a {
   padding-top: 40px;
 }
 
-.social-media-section{
-    border-top: 1px solid rgb(80 73 73 / 64.4%);
+.social-media-section {
+  border-top: 1px solid rgb(80 73 73 / 64.4%);
 }
-
 
 .media-icon {
   margin-left: 15px;
