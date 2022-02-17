@@ -1,285 +1,284 @@
 
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: Roboto, sans-serif;
-  }
-  
-  body {
-    background-color: #140f5ef5;
-    height: max-content;
-  }
-  
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Roboto, sans-serif;
+}
+
+body {
+  background-color: #140f5ef5;
+  height: max-content;
+}
+
+.wrapper {
+  background: url("./assets/top-circles.png") no-repeat;
+  background-size: cover;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: calc(40) repeat(6, 1fr);
+}
+
+header {
+  color: rgb(238 230 230);
+  display: flex;
+  justify-content: center;
+  margin: 40px;
+}
+
+.my-logo {
+  flex: 1;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 16px;
+}
+
+nav a {
+  width: 50px;
+  height: 50px;
+  color: #d2d2da;
+  text-decoration: none;
+  margin: 6px;
+}
+
+.my-logo a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+}
+
+.section-one,
+.section-two {
+  display: flex;
+  justify-content: center;
+  margin: 40px;
+  color: rgb(255 255 255 / 66.4%);
+  border-bottom: 1px solid #646369;
+  padding-bottom: 30px;
+}
+
+h1 {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-size: 30px;
+  letter-spacing: 0.37px;
+  color: #7d73fc;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.my-skills {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 28px;
+  text-align: center;
+}
+
+h4 {
+  margin: 15px 0 17px;
+  color: rgb(255 255 255 / 81.5%);
+  text-align: center;
+  font-size: 20px;
+}
+
+h3,
+h2 {
+  color: #9490ff;
+  margin-bottom: 20px;
+  font-size: 12px;
+}
+
+ul li {
+  margin-bottom: 6px;
+  list-style-type: none;
+  font-family:
+    "Lucida Sans",
+    "Lucida Sans Regular",
+    "Lucida Grande",
+    "Lucida Sans Unicode",
+    Geneva,
+    Verdana,
+    sans-serif;
+  color: rgb(255 255 255 / 67.1%);
+}
+
+.languages-section {
+  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 30px;
+  text-align: center;
+  margin: 40px;
+}
+
+.social-medias {
+  text-align: center;
+  color: #7d73fc;
+}
+
+.lanuage-title {
+  color: #7d73fc;
+}
+
+.media1 {
+  padding-top: 30px;
+  border-top: 1px solid rgb(80 73 73 / 64.4%);
+  margin: 40px;
+}
+
+.social-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.social-media-icons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.about-me {
+  padding: 15px;
+  letter-spacing: 1px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+/******************** My Projects Style    **************************/
+
+.midle-section {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 40px;
+}
+
+.my-work {
+  display: flex;
+  justify-content: center;
+  padding: 25px 0 45px;
+}
+
+.my-recent-work {
+  color: #7d73fc;
+  font-size: 40px;
+  border-bottom: 1px solid rgb(80 73 73 / 64.4%);
+  padding-bottom: 30px;
+}
+
+.arrow-icon,
+span {
+  color: #a2a3ae;
+  margin: 10px;
+  font-size: 20px;
+}
+
+.img-placeholder-container {
+  margin: 40px 0 50px;
+  width: 100%;
+  background-color: #fff;
+  height: 236px;
+}
+
+.multipost-stories-title {
+  height: max-content;
+  color: #fff;
+  font-size: 37px;
+  margin: 30px 0 50px;
+}
+
+.multipost-story-prgph {
+  height: max-content;
+}
+
+.my-recent-work-section {
+  position: relative;
+  width: fit-content;
+  color: rgb(255 255 255 / 67.1%);
+  padding: 40px;
+  background-image: url("./assets/elipse1.png"), url("./assets/elipse2.png");
+  background-repeat: no-repeat;
+  background-size: 300px, 150px;
+  background-position: 1px top, bottom 250px right;
+}
+
+.build-with {
+  color: rgb(221 212 212);
+  display: flex;
+  margin: 30px 0;
+}
+
+.css,
+.html,
+.boostrap,
+.ruby {
+  border-right: 1px solid rgb(80 73 73 / 64.4%);
+  padding-right: 10px;
+  margin-left: 10px;
+}
+
+.see-project-button {
+  margin-top: 15px;
+  color: rgb(255 255 255 / 67.1%);
+  width: 89px;
+  height: 49px;
+  background-color: #7d73fc;
+  border: none;
+}
+
+.see-project-button:hover {
+  background-color: #968ff5;
+  color: rgb(255 254 254 / 98.6%);
+  cursor: pointer;
+}
+
+.section-three {
+  display: flex;
+  justify-content: center;
+  margin: 40px;
+  color: rgb(255 255 255 / 66.4%);
+  border-bottom: 1px solid #646369;
+  padding-bottom: 30px;
+}
+
+.contact-us-h1 {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-size: 30px;
+  letter-spacing: 0.37px;
+  color: #7d73fc;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+#my-form {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#text-input,
+#mail-input {
+  padding: 15px;
+  width: 100%;
+  border: none;
+}
+
+.footer-email {
+  margin: 20px 0;
+}
+
+/******************** Media queries    **************************/
+
+@media only screen and (max-width: 700px) {
   .wrapper {
-    background: url("./assets/top-circles.png") no-repeat;
-    background-size: cover;
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: calc(40) repeat(6, 1fr);
+    width: auto;
+    background-size: contain;
   }
-  
-  header {
-    color: rgb(238 230 230);
-    display: flex;
-    justify-content: center;
-    margin: 40px;
-  }
-  
-  .my-logo {
-    flex: 1;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 500;
-    font-style: normal;
-    font-size: 18px;
-    line-height: 16px;
-  }
-  
-  nav a {
-    width: 50px;
-    height: 50px;
-    color: #d2d2da;
-    text-decoration: none;
-    margin: 6px;
-  }
-  
-  .my-logo a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 18px;
-  }
-  
-  .section-one,
-  .section-two {
-    display: flex;
-    justify-content: center;
-    margin: 40px;
-    color: rgb(255 255 255 / 66.4%);
-    border-bottom: 1px solid #646369;
-    padding-bottom: 30px;
-  }
-  
-  h1 {
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    font-style: normal;
-    font-size: 30px;
-    letter-spacing: 0.37px;
-    color: #7d73fc;
-    font-weight: bold;
-    margin-bottom: 15px;
-  }
-  
-  .my-skills {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: normal;
-    line-height: 28px;
-    text-align: center;
-  }
-  
-  h4 {
-    margin: 15px 0 17px;
-    color: rgb(255 255 255 / 81.5%);
-    text-align: center;
-    font-size: 20px;
-  }
-  
-  h3,
-  h2 {
-    color: #9490ff;
-    margin-bottom: 20px;
-    font-size: 12px;
-  }
-  
-  ul li {
-    margin-bottom: 6px;
-    list-style-type: none;
-    font-family:
-      "Lucida Sans",
-      "Lucida Sans Regular",
-      "Lucida Grande",
-      "Lucida Sans Unicode",
-      Geneva,
-      Verdana,
-      sans-serif;
-    color: rgb(255 255 255 / 67.1%);
-  }
-  
-  .languages-section {
-    justify-content: center;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    row-gap: 30px;
-    text-align: center;
-    margin: 40px;
-  }
-  
-  .social-medias {
-    text-align: center;
-    color: #7d73fc;
-  }
-  
-  .lanuage-title {
-    color: #7d73fc;
-  }
-  
-  .media1 {
-    padding-top: 30px;
-    border-top: 1px solid rgb(80 73 73 / 64.4%);
-    margin: 40px;
-  }
-  
-  .social-icon {
-    width: 24px;
-    height: 24px;
-  }
-  
-  .social-media-icons {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-  }
-  
-  .about-me {
-    padding: 15px;
-    letter-spacing: 1px;
-    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-  }
-  
-  /******************** My Projects Style    **************************/
-  
-  .midle-section {
-    display: grid;
-    grid-template-columns: 1fr;
-    margin: 40px;
-  }
-  
-  .my-work {
-    display: flex;
-    justify-content: center;
-    padding: 25px 0 45px;
-  }
-  
-  .my-recent-work {
-    color: #7d73fc;
-    font-size: 40px;
-    border-bottom: 1px solid rgb(80 73 73 / 64.4%);
-    padding-bottom: 30px;
-  }
-  
-  .arrow-icon,
-  span {
-    color: #a2a3ae;
-    margin: 10px;
-    font-size: 20px;
-  }
-  
-  .img-placeholder-container {
-    margin: 40px 0 50px;
-    width: 100%;
-    background-color: #fff;
-    height: 236px;
-  }
-  
-  .multipost-stories-title {
-    height: max-content;
-    color: #fff;
-    font-size: 37px;
-    margin: 30px 0 50px;
-  }
-  
-  .multipost-story-prgph {
-    height: max-content;
-  }
-  
-  .my-recent-work-section {
-    position: relative;
-    width: fit-content;
-    color: rgb(255 255 255 / 67.1%);
-    padding: 40px;
-    background-image: url("./assets/elipse1.png"), url("./assets/elipse2.png");
-    background-repeat: no-repeat;
-    background-size: 300px, 150px;
-    background-position: 1px top, bottom 250px right;
-  }
-  
-  .build-with {
-    color: rgb(221 212 212);
-    display: flex;
-    margin: 30px 0;
-  }
-  
-  .css,
-  .html,
-  .boostrap,
-  .ruby {
-    border-right: 1px solid rgb(80 73 73 / 64.4%);
-    padding-right: 10px;
-    margin-left: 10px;
-  }
-  
-  .see-project-button {
-    margin-top: 15px;
-    color: rgb(255 255 255 / 67.1%);
-    width: 89px;
-    height: 49px;
-    background-color: #7d73fc;
-    border: none;
-  }
-  
-  .see-project-button:hover {
-    background-color: #968ff5;
-    color: rgb(255 254 254 / 98.6%);
-    cursor: pointer;
-  }
-  
-  .section-three {
-    display: flex;
-    justify-content: center;
-    margin: 40px;
-    color: rgb(255 255 255 / 66.4%);
-    border-bottom: 1px solid #646369;
-    padding-bottom: 30px;
-  }
-  
-  .contact-us-h1 {
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    font-style: normal;
-    font-size: 30px;
-    letter-spacing: 0.37px;
-    color: #7d73fc;
-    font-weight: bold;
-    margin-bottom: 15px;
-  }
-  
-  #my-form {
-    margin-top: 25px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-  }
-  
-  #text-input,
-  #mail-input {
-    padding: 15px;
-    width: 100%;
-    border: none;
-  }
-  
-  .footer-email {
-    margin: 20px 0;
-  }
-  
-  /******************** Media queries    **************************/
-  
-  @media only screen and (max-width: 700px) {
-    .wrapper {
-      width: auto;
-      background-size: contain;
-    }
-  }
-  
+}
