@@ -9,7 +9,6 @@
 body {
   background-color: #140f5ef5;
   height: max-content;
-  align-content: center;
   margin: 0 auto;
 }
 
@@ -209,7 +208,6 @@ span {
   background-size: 300px, 150px;
   background-position: 1px top, bottom 250px right;
   display: grid;
-  justify-items: center;
 }
 
 .build-with {
@@ -281,6 +279,11 @@ span {
 .footer-email {
   margin: 20px 0;
   color: rgba(255, 255, 255, 0.863);
+}
+
+#last-btn{
+    align-self: center;
+    margin: 50px 0 40px 100px;
 }
 
 /******************** Media queries    **************************/
