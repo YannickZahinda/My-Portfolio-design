@@ -196,7 +196,10 @@ span {
   height: max-content;
 }
 
+
+
 .my-recent-work-section {
+  --height : (height: max-content;);  
   position: relative;
   width: fit-content;
   color: rgb(255 255 255 / 67.1%);
@@ -205,6 +208,8 @@ span {
   background-repeat: no-repeat;
   background-size: 300px, 150px;
   background-position: 1px top, bottom 250px right;
+  display: grid;
+  grid-template-rows: repeat(19, var(--height));
 }
 
 .build-with {
