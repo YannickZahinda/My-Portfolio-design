@@ -15,10 +15,9 @@ body {
 }
 
 .wrapper {
-  /* border: 3px solid yellow; */
   width: 100%;
   background: url("./assets/top-circles.png") no-repeat;
-  background-size: cover;
+  background-size: contain;
   background-position: center;
   height: max-content;
   padding: 40px;
@@ -44,7 +43,6 @@ h3 {
 }
 
 header {
-  margin-bottom: 40px;
   display: flex;
   justify-content: space-between;
 }
