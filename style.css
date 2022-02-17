@@ -7,8 +7,9 @@
 
 body {
   width: 100%;
-  display: flex;
-  justify-content: center;
+
+  /* display: flex;
+  justify-content: center; */
   background-color: #140f5ef5;
   height: max-content;
 }
