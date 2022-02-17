@@ -74,7 +74,7 @@ h1 {
 
 .my-skills {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 20px;
+  font-size: 16px;
   font-style: normal;
   font-weight: normal;
   line-height: 28px;
@@ -282,8 +282,8 @@ span {
   color: rgba(255, 255, 255, 0.863);
 }
 
-textarea{
-    padding: 10px 10px;
+textarea {
+  padding: 10px 10px;
 }
 
 #last-btn {
