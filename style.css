@@ -9,12 +9,13 @@
 body {
   background-color: #140f5ef5;
   height: max-content;
+  align-content: center;
+  margin: 0 auto;
 }
 
 .wrapper {
   background: url("./assets/top-circles.png") no-repeat;
   background-size: cover;
-  width: 100%;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: calc(40) repeat(6, 1fr);
@@ -156,6 +157,8 @@ ul li {
   display: grid;
   grid-template-columns: 1fr;
   margin: 40px;
+  border-top: 1px solid rgb(80 73 73 / 64.4%);
+  padding-top: 40px;
 }
 
 .my-work {
@@ -196,10 +199,7 @@ span {
   height: max-content;
 }
 
-
-
 .my-recent-work-section {
-  --height : (height: max-content;);  
   position: relative;
   width: fit-content;
   color: rgb(255 255 255 / 67.1%);
@@ -209,7 +209,7 @@ span {
   background-size: 300px, 150px;
   background-position: 1px top, bottom 250px right;
   display: grid;
-  grid-template-rows: repeat(19, var(--height));
+  justify-items: center;
 }
 
 .build-with {
