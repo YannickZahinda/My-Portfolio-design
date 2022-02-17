@@ -43,12 +43,18 @@ h3 {
 }
 
 header {
-  margin-bottom: 10px;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+header a{
+    text-decoration: none;
+    color: #fff;
+    align-self: center;
 }
 
 nav {
-  display: flex;
-  justify-content: space-between;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-style: normal;
