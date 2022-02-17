@@ -224,7 +224,9 @@ span {
 .ruby {
   border-right: 1px solid rgb(80 73 73 / 64.4%);
   padding-right: 10px;
+  height: 40px;
   margin-left: 10px;
+  color: rgba(255, 255, 255, 0.76);
 }
 
 .see-project-button {
