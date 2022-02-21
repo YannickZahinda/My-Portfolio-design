@@ -53,8 +53,10 @@ nav a {
 
 .section-one,
 .section-two {
-  display: flex;
-  justify-content: center;
+  /* display: flex;
+  justify-content: center; */
+  display: grid;
+  justify-items: center;
   margin: 40px;
   color: rgb(255 255 255 / 66.4%);
   border-bottom: 1px solid #646369;
