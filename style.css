@@ -223,7 +223,7 @@ span {
 .build-with {
   color: rgb(221 212 212);
   /* display: flex; */
-  float: left;
+  float: right;
   margin: 30px 0;
 }
 
