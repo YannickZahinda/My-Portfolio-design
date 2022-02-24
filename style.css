@@ -439,7 +439,7 @@ textarea {
     width: auto;
     background: url("./assets/second-section-circles.png") no-repeat;
     background-size: cover;
-    background-position: center top 0px;
+    background-position: center;
     background-origin: padding-box;
     padding: 130px 0 260px 130px;
   }
