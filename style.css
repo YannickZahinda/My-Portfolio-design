@@ -473,6 +473,10 @@ textarea {
     padding: 130px 0 260px 130px;
   }
 
+  .my-recent-work{
+    color: #9390FF;
+  }
+
   .contact-us-heading {
     display: none;
   }
