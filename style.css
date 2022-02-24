@@ -439,9 +439,9 @@ textarea {
     width: auto;
     background: url("./assets/second-section-circles.png") no-repeat;
     background-size: cover;
-    background-position: center;
-    background-origin: inherit;
-    padding: 130px 130px;
+    background-position: center top 0px;
+    background-origin: padding-box;
+    padding: 130px 0 260px 130px;
   }
 
   .contact-us-heading {
