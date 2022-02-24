@@ -1,4 +1,3 @@
-
 * {
   padding: 0;
   margin: 0;
@@ -7,6 +6,7 @@
 }
 
 body {
+  /* width: max-content; */
   background-color: #140f5ef5;
   height: max-content;
   margin: 0 auto;
@@ -57,8 +57,6 @@ nav a {
 
 .section-one,
 .section-two {
-  /* display: flex;
-  justify-content: center; */
   display: grid;
   justify-items: center;
   margin: 40px;
@@ -332,8 +330,24 @@ textarea {
     height: 20px;
   }
 
+  .section-one,
+  .section-two {
+    border: none;
+  }
+
+  .my-skills {
+    border-bottom: 1px solid #646369;
+    padding-bottom: 40px;
+    font-size: 17px;
+  }
+
   h1 {
-    font-size: 35px;
+    font-size: 90px;
+    color: #9390ff;
+  }
+
+  h4 {
+    font-size: 40px;
   }
 
   #menu-icon {
@@ -361,7 +375,7 @@ textarea {
   .wrapper {
     background: url("./assets/two-header-circles.png") no-repeat;
     background-size: contain;
-    background-position: center top 80px;
+    background-position: center top 150px;
   }
 
   header {
@@ -369,23 +383,30 @@ textarea {
   }
 
   .section-wrapper-1 {
-    width: 447px;
+    width: 1300px;
     font-size: 20px;
     margin: 0 auto;
   }
 
+  .description1 {
+    width: 447px;
+    margin: 0 auto;
+  }
+
   .languages-section {
+    width: 447px;
+    margin: 0 auto;
     justify-content: center;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 25px;
     text-align: center;
-
-    /* margin: 40px; */
+    border-bottom: 1px solid #646369;
+    padding: 0 0 40px 0;
   }
 
-  .my-skills {
-    font-size: 17px;
+  .midle-section {
+    border: none;
   }
 
   .lanuage-title {
@@ -403,15 +424,23 @@ textarea {
     display: none;
   }
 
+  .my-work {
+    padding: 0;
+  }
+
+  .social-media-icons {
+    align-self: flex-end;
+  }
+
   .social-media-icons2 {
     display: none;
   }
 
   .arrow-icon-container {
     display: block;
-    display: flex;
-    justify-content: space-between;
-    margin: 0 100px 0 100px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row: auto;
   }
 
   .my-recent-work {
@@ -431,7 +460,7 @@ textarea {
 
   .multipost-story-prgph {
     font-size: 15px;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     font-weight: normal;
   }
 
@@ -468,9 +497,11 @@ textarea {
   }
 
   .social-icon {
-    width: 15px;
-    height: 15px;
-    vertical-align: middle;
+    height: 20px;
+    width: 17.985200881958008px;
+    left: 0.01396942138671875px;
+    top: 0;
+    border-radius: 0;
   }
 
   .footer {
