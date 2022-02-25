@@ -500,7 +500,7 @@ textarea {
   .social-medias-dsktop {
     display: flex;
     justify-content: center;
-    margin-top: 0px;
+    margin-top: 0;
   }
 
   .social-medias {
