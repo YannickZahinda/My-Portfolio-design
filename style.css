@@ -201,7 +201,15 @@ span {
   width: 100%;
   background-color: #fff;
   height: 236px;
+  
 }
+.img-placeholder-container:hover {
+  transition: 1s ease;
+  border-radius: 10px;
+  width: 544px;
+  box-shadow: inset rgba(58, 32, 32, 0.459) 5px 4px 5px 2px;
+  cursor: progress;
+} 
 
 .multipost-stories-title {
   height: max-content;
@@ -251,6 +259,8 @@ span {
   height: 49px;
   background-color: #9390ff;
   border: none;
+  transition: 2s ease ; 
+  
 }
 
 .see-project-button:hover {
@@ -573,6 +583,12 @@ textarea {
 
 @keyframes Logo_rotation {
   0%{
-    transform: rotateX(360deg);
+    transform: rotateX(360deg)
+  }
+}
+@keyframes change-colour {
+  0%{
+   background-color: blueviolet;
+   transition: 3s ease;
   }
 }
