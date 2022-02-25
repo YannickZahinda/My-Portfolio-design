@@ -562,10 +562,4 @@ textarea {
     margin: 0;
     width: 504px;
   }
-
-  .name-inputs {
-    display: flex;
-    justify-content: space-around;
-    gap: 20px;
-  }
 }
