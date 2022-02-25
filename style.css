@@ -245,14 +245,24 @@ span {
   color: rgb(255 255 255 / 67.1%);
   width: 89px;
   height: 49px;
-  background-color: #7d73fc;
+  background-color: #9390ff;
   border: none;
 }
 
 .see-project-button:hover {
-  background-color: #968ff5;
+  background-color: #7d73fc;
   color: rgb(255 254 254 / 98.6%);
   cursor: pointer;
+}
+
+.see-project-button:checked {
+  background-color: #5e42d7;
+  color: #fff;
+}
+
+.see-project-button:disabled {
+  background-color: #2a2b33;
+  color: #fff;
 }
 
 .section-three {
