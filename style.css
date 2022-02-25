@@ -283,7 +283,7 @@ span {
   gap: 20px;
 }
 
-#text-input,
+.text-input,
 #mail-input {
   padding: 15px;
   width: 100%;
@@ -336,7 +336,6 @@ textarea {
   }
 
   .my-skills {
-    border-bottom: 1px solid #646369;
     padding-bottom: 40px;
     font-size: 17px;
   }
@@ -373,9 +372,7 @@ textarea {
   }
 
   .wrapper {
-    background: url("./assets/two-header-circles.png") no-repeat;
-    background-size: contain;
-    background-position: center top 150px;
+    background: none;
   }
 
   header {
@@ -386,6 +383,9 @@ textarea {
     width: 1300px;
     font-size: 20px;
     margin: 0 auto;
+    background: url("./assets/two-header-circles.png") no-repeat;
+    background-size: contain;
+    background-position: center top 60px;
   }
 
   .description1 {
@@ -443,19 +443,16 @@ textarea {
     grid-row: auto;
   }
 
-  .my-recent-work {
-    padding: 40px;
-  }
-
   .multipost-stories-item {
-    width: 90%;
     display: flex;
     justify-content: center;
     gap: 30px;
+    margin-bottom: 50px;
   }
 
   .multipost-stories-item1 {
     flex-direction: row-reverse;
+    justify-content: center;
   }
 
   .multipost-story-prgph {
@@ -465,16 +462,21 @@ textarea {
   }
 
   .my-recent-work-section {
-    width: auto;
+    width: 100%;
     background: url("./assets/second-section-circles.png") no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-origin: padding-box;
-    padding: 130px 0 260px 130px;
+    background-size: auto;
+    background-position: center bottom;
+    padding-top: 50px;
   }
 
-  .my-recent-work{
-    color: #9390FF;
+  .my-recent-work {
+    color: #9390ff;
+    padding: 40px;
+  }
+
+  .multipost-stories-container {
+    height: 50px;
+    width: max-content;
   }
 
   .contact-us-heading {
@@ -488,6 +490,10 @@ textarea {
   .social-medias-dsktop {
     display: flex;
     justify-content: center;
+  }
+
+  .social-medias {
+    border: none;
   }
 
   .footer-item {
@@ -529,8 +535,25 @@ textarea {
     padding: 0;
   }
 
+  .build-with {
+    margin: 10px 0 10px 0;
+    padding: 0;
+  }
+
   .multipost-stories-title,
   .multipost-story-prgph {
-    margin-bottom: 20px;
+    margin: 0;
+    width: 448px;
+  }
+
+  .img-placeholder-container {
+    margin: 0;
+    width: 504px;
+  }
+
+  .name-inputs {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
   }
 }
