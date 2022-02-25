@@ -39,6 +39,10 @@ header {
   font-size: 18px;
   line-height: 16px;
   align-self: center;
+  animation-name: Logo_rotation;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-delay: 3s;
 }
 
 nav a {
@@ -561,5 +565,14 @@ textarea {
   .img-placeholder-container {
     margin: 0;
     width: 504px;
+  }
+}
+
+/*------ Animations ------*/
+
+
+@keyframes Logo_rotation {
+  0%{
+    transform: rotateX(360deg);
   }
 }
