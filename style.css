@@ -1,4 +1,3 @@
-
 * {
   padding: 0;
   margin: 0;
@@ -7,9 +6,14 @@
 }
 
 body {
+  /* width: max-content; */
   background-color: #140f5ef5;
   height: max-content;
   margin: 0 auto;
+}
+
+.menu-list {
+  display: none;
 }
 
 .wrapper {
@@ -53,8 +57,6 @@ nav a {
 
 .section-one,
 .section-two {
-  /* display: flex;
-  justify-content: center; */
   display: grid;
   justify-items: center;
   margin: 40px;
@@ -176,6 +178,7 @@ ul li {
 }
 
 .my-recent-work {
+  margin: 40px;
   color: #7d73fc;
   font-size: 40px;
   border-bottom: 1px solid rgb(80 73 73 / 64.4%);
@@ -242,20 +245,31 @@ span {
   color: rgb(255 255 255 / 67.1%);
   width: 89px;
   height: 49px;
-  background-color: #7d73fc;
+  background-color: #9390ff;
   border: none;
 }
 
 .see-project-button:hover {
-  background-color: #968ff5;
+  background-color: #7d73fc;
   color: rgb(255 254 254 / 98.6%);
   cursor: pointer;
 }
 
+.see-project-button:checked {
+  background-color: #5e42d7;
+  color: #fff;
+}
+
+.see-project-button:disabled {
+  background-color: #2a2b33;
+  color: #fff;
+}
+
 .section-three {
+  width: 100%;
   display: flex;
   justify-content: center;
-  margin: 40px;
+  margin: 0 auto;
   color: rgb(255 255 255 / 66.4%);
   border-bottom: 1px solid #646369;
   padding-bottom: 30px;
@@ -279,7 +293,7 @@ span {
   gap: 20px;
 }
 
-#text-input,
+.text-input,
 #mail-input {
   padding: 15px;
   width: 100%;
@@ -288,7 +302,11 @@ span {
 
 .footer-email {
   margin: 20px 0;
-  color: rgba(255, 255, 255, 0.863);
+  color: #ebebff;
+}
+
+.footer {
+  padding-top: 20px;
 }
 
 textarea {
@@ -299,11 +317,249 @@ textarea {
   align-self: center;
 }
 
+.arrow-icon-container {
+  display: none;
+}
+
+.contact-us-heading2 {
+  display: none;
+}
+
 /******************** Media queries    **************************/
 
 @media only screen and (max-width: 700px) {
   .wrapper {
     width: auto;
     background-size: contain;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .my-logo {
+    width: 77px;
+    height: 20px;
+  }
+
+  .section-one,
+  .section-two {
+    border: none;
+  }
+
+  .my-skills {
+    padding-bottom: 40px;
+    font-size: 17px;
+  }
+
+  h1 {
+    font-size: 90px;
+    color: #9390ff;
+  }
+
+  h4 {
+    font-size: 40px;
+  }
+
+  #menu-icon {
+    display: none;
+  }
+
+  .menu-list ul li a,
+  .menu-list {
+    text-decoration: none;
+    color: #fff;
+    margin: 15px;
+    list-style-type: none;
+    display: flex;
+  }
+
+  .menu-list ul li a {
+    display: block;
+  }
+
+  #mail-img {
+    width: 22px;
+    height: 18px;
+  }
+
+  .wrapper {
+    background: none;
+  }
+
+  header {
+    margin-top: 10px;
+  }
+
+  .section-wrapper-1 {
+    width: 1300px;
+    font-size: 20px;
+    margin: 0 auto;
+    background: url("./assets/two-header-circles.png") no-repeat;
+    background-size: contain;
+    background-position: center top 60px;
+  }
+
+  .description1 {
+    width: 447px;
+    margin: 0 auto;
+  }
+
+  .languages-section {
+    width: 447px;
+    margin: 0 auto;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 25px;
+    text-align: center;
+    border-bottom: 1px solid #646369;
+    padding: 0 0 40px 0;
+  }
+
+  .midle-section {
+    border: none;
+  }
+
+  .lanuage-title {
+    font-size: 17px;
+    text-align: start;
+  }
+
+  .language-item {
+    font-size: 14px;
+    text-align: start;
+    line-height: 30px;
+  }
+
+  .my-work2 {
+    display: none;
+  }
+
+  .my-work {
+    padding: 0;
+  }
+
+  .social-media-icons {
+    align-self: flex-end;
+  }
+
+  .social-media-icons2 {
+    display: none;
+  }
+
+  .arrow-icon-container {
+    display: block;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row: auto;
+  }
+
+  .multipost-stories-item {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 50px;
+  }
+
+  .multipost-stories-item1 {
+    flex-direction: row-reverse;
+    justify-content: center;
+  }
+
+  .multipost-story-prgph {
+    font-size: 15px;
+    font-family: "Roboto", sans-serif;
+    font-weight: normal;
+  }
+
+  .my-recent-work-section {
+    width: 100%;
+    background: url("./assets/second-section-circles.png") no-repeat;
+    background-size: auto;
+    background-position: center bottom;
+    padding-top: 50px;
+  }
+
+  .my-recent-work {
+    color: #9390ff;
+    padding: 40px;
+  }
+
+  .multipost-stories-container {
+    height: 50px;
+    width: max-content;
+  }
+
+  .contact-us-heading {
+    display: none;
+  }
+
+  .contact-us-heading2 {
+    display: block;
+  }
+
+  .social-medias-dsktop {
+    display: flex;
+    justify-content: center;
+    margin-top: 0;
+  }
+
+  .social-medias {
+    border: none;
+  }
+
+  .footer-item {
+    margin-left: 30px;
+    color: #ebebff;
+  }
+
+  .section-three {
+    width: 684px;
+    margin: 0 auto;
+    border: none;
+  }
+
+  .social-icon {
+    height: 20px;
+    width: 17.985200881958008px;
+    left: 0.01396942138671875px;
+    top: 0;
+    border-radius: 0;
+  }
+
+  .footer {
+    border-top: 1px solid #646369;
+  }
+
+  .footer-email,
+  .footer-item,
+  .footer-item1 {
+    margin: 0;
+    padding: 20px;
+  }
+
+  .last-btn {
+    width: 160px;
+    height: 48px;
+  }
+
+  .see-project-button {
+    margin: 0;
+    padding: 0;
+  }
+
+  .build-with {
+    margin: 10px 0 10px 0;
+    padding: 0;
+  }
+
+  .multipost-stories-title,
+  .multipost-story-prgph {
+    margin: 0;
+    width: 448px;
+  }
+
+  .img-placeholder-container {
+    margin: 0;
+    width: 504px;
   }
 }

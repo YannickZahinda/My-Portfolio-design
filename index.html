@@ -1,37 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <title>Microverse student Portfolio</title>
-  </head>
 
-  <body>
-    <main class="wrapper">
-      <header>
-        <div class="my-logo"><a href="#">Yann</a></div>
-        <nav class="menu-lines">
-          <img src="./assets/icon-menu.png" alt="menu icon" />
-        </nav>
-      </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <title>Microverse student Portfolio</title>
+</head>
+
+<body>
+  <main class="wrapper">
+    <header>
+      <div class="my-logo"><a href="#">Yann</a></div>
+      <nav class="menu-lines">
+        <img src="./assets/icon-menu.png" alt="menu icon" id="menu-icon" />
+        <ul class="menu-list">
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+          <li>
+            <a href="#"><img src="./assets/mail-icon.png" alt="mail-icon" id="mail-img" /></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div class="section-wrapper-1">
       <section class="section-one">
         <div>
           <h1>Yannick Zahinda</h1>
-          <h4>Software Developper</h4>
-          <p class="my-skills">
-            I can help you build a product , feature or website Look through
-            some of my work and experience! If you like what you see and have a
-            project you need coded, don’t hestiate to contact me.
-          </p>
+          <div class="description1">
+            <h4>Software Developper</h4>
+            <p class="my-skills">
+              I can help you build a product , feature or website Look through
+              some of my work and experience! If you like what you see and have
+              a project you need coded, don’t hestiate to contact me.
+            </p>
+          </div>
         </div>
       </section>
       <div class="languages-section">
@@ -39,10 +48,10 @@
           <li class="lanuage-title">Language</li>
           <li>
             <ul>
-              <li>Javascript</li>
-              <li>Ruby</li>
-              <li>HTML</li>
-              <li>CSS</li>
+              <li class="language-item">Javascript</li>
+              <li class="language-item">Ruby</li>
+              <li class="language-item">HTML</li>
+              <li class="language-item">CSS</li>
             </ul>
           </li>
         </ul>
@@ -50,10 +59,10 @@
           <li class="lanuage-title">Framework</li>
           <li>
             <ul>
-              <li>Boostrap</li>
-              <li>Ruby on Rails</li>
-              <li>RSPec</li>
-              <li>Selenium</li>
+              <li class="language-item">Boostrap</li>
+              <li class="language-item">Ruby on Rails</li>
+              <li class="language-item">RSPec</li>
+              <li class="language-item">Selenium</li>
             </ul>
           </li>
         </ul>
@@ -61,260 +70,212 @@
           <li class="lanuage-title">Skills</li>
           <li>
             <ul>
-              <li>CodeKit</li>
-              <li>Github</li>
-              <li>Gitlab</li>
-              <li>Terminal</li>
+              <li class="language-item">CodeKit</li>
+              <li class="language-item">Github</li>
+              <li class="language-item">Gitlab</li>
+              <li class="language-item">Terminal</li>
             </ul>
           </li>
         </ul>
       </div>
       <section class="midle-section">
         <div class="social-medias">
-          <ul class="social-media-icons">
+          <ul class="social-media-icons social-media-icons2">
             <li>
-              <a href="#"
-                ><img
-                  class="social-icon"
-                  src="./assets/caticon.png"
-                  alt="m icon"
-              /></a>
+              <a href="#"><img class="social-icon" src="./assets/caticon.png" alt="m icon" /></a>
             </li>
             <li>
-              <a href="#"
-                ><img
-                  class="social-icon"
-                  src="./assets/linkedin-icon.png"
-                  alt="linkedin"
-              /></a>
+              <a href="#"><img class="social-icon" src="./assets/linkedin-icon.png" alt="linkedin" /></a>
             </li>
             <li>
-              <a href="#"
-                ><img
-                  class="social-icon"
-                  src="./assets/fingerpic.png"
-                  alt="finger-icon"
-              /></a>
+              <a href="#"><img class="social-icon" src="./assets/fingerpic.png" alt="finger-icon" /></a>
             </li>
             <li>
-              <a href="#"
-                ><img
-                  class="social-icon"
-                  src="./assets/twittericon.png"
-                  alt="twitter icon"
-              /></a>
+              <a href="#"><img class="social-icon" src="./assets/twittericon.png" alt="twitter icon" /></a>
             </li>
             <li>
-              <a href="#"
-                ><img
-                  class="social-icon"
-                  src="./assets/Vector2.png"
-                  alt="in icon"
-              /></a>
+              <a href="#"><img class="social-icon" src="./assets/Vector2.png" alt="in icon" /></a>
             </li>
           </ul>
-          <h2 class="my-work">
-            <img
-              src="./assets/arrow-icon.png"
-              alt="arrow icon"
-              class="arrow-icon"
-            /><span>Work</span>
+          <h2 class="my-work my-work2">
+            <img src="./assets/arrow-icon.png" alt="arrow icon" class="arrow-icon" /><span>Work</span>
           </h2>
         </div>
-        <h5 class="my-recent-work">MY RECENT WORK</h5>
       </section>
-      <section class="my-recent-work-section">
+    </div>
+    <div class="arrow-icon-container">
+      <div class="my-work my-work">
+        <span>Work</span><img src="./assets/arrow-icon.png" alt="arrow icon" class="arrow-icon" />
+      </div>
+      <ul class="social-media-icons">
+        <li class="item">
+          <a href="#"><img class="social-icon" src="./assets/caticon.png" alt="m icon" /></a>
+        </li>
+        <li class="item">
+          <a href="#"><img class="social-icon" src="./assets/linkedin-icon.png" alt="linkedin" /></a>
+        </li>
+        <li class="item">
+          <a href="#"><img class="social-icon" src="./assets/fingerpic.png" alt="finger-icon" /></a>
+        </li>
+        <li class="item">
+          <a href="#"><img class="social-icon" src="./assets/twittericon.png" alt="twitter icon" /></a>
+        </li>
+        <li class="item">
+          <a href="#"><img class="social-icon" src="./assets/Vector2.png" alt="in icon" /></a>
+        </li>
+      </ul>
+      <div class="my-work">
+        <img src="./assets/arrow-icon.png" alt="arrow icon" class="arrow-icon" /><span>Work</span>
+      </div>
+    </div>
+    <h5 class="my-recent-work">My recent work</h5>
+    <section class="my-recent-work-section">
+      <div class="multipost-stories-item">
         <div class="img-placeholder-container"></div>
-        <h6 class="multipost-stories-title">Multi-Post Storie</h6>
-        <p class="multipost-story-prgph">
-          A daily selection of privately personalized reads; no accounts
-          sign-ups required. has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a standard dummy text.
-        </p>
+        <div class="multipost-stories-container">
+          <h6 class="multipost-stories-title">Multi-Post Storie</h6>
+          <p class="multipost-story-prgph">
+            A daily selection of privately personalized reads; no accounts
+            sign-ups required. has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer took a standard
+            dummy text.
+          </p>
+          <ul class="build-with">
+            <li class="css">css</li>
+            <li class="html">html</li>
+            <li class="boostrap">Boostrap</li>
+            <li class="ruby">Ruby</li>
+          </ul>
+          <div class="button-container">
+            <button class="see-project-button" type="button">
+              See Project
+            </button>
+          </div>
+        </div>
+      </div>
 
-        <ul class="build-with">
-          <li class="css">css</li>
-          <li class="html">html</li>
-          <li class="boostrap">Boostrap</li>
-          <li class="ruby">Ruby</li>
-        </ul>
-        <div class="button-container">
-          <button class="see-project-button" type="button">See Project</button>
-        </div>
-        <div class="multipost-stories-container"></div>
-        <h6 class="multipost-stories-title">Multi-Post Storie</h6>
-        <p class="multipost-story-prgph">
-          A daily selection of privately personalized reads; no accounts or
-          sign-ups required. has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a standard dummy text.
-        </p>
-        <ul class="build-with">
-          <li class="css">css</li>
-          <li class="html">html</li>
-          <li class="boostrap">Boostrap</li>
-          <li class="ruby">Ruby</li>
-        </ul>
-        <div class="button-container">
-          <button class="see-project-button" type="button">See Project</button>
-        </div>
+      <div class="multipost-stories-item multipost-stories-item1">
         <div class="img-placeholder-container"></div>
-        <h6 class="multipost-stories-title">Multi-Post Storie</h6>
-        <p class="multipost-story-prgph">
-          A daily selection of privately personalized reads; no accounts or
-          sign-ups required. has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a standard dummy text.
-        </p>
-        <ul class="build-with">
-          <li class="css">css</li>
-          <li class="html">html</li>
-          <li class="boostrap">Boostrap</li>
-          <li class="ruby">Ruby</li>
-        </ul>
-        <div class="button-container">
-          <button class="see-project-button" type="button">See Project</button>
+        <div class="multipost-stories-container">
+          <h6 class="multipost-stories-title">Multi-Post Storie</h6>
+          <p class="multipost-story-prgph">
+            A daily selection of privately personalized reads; no accounts or
+            sign-ups required. has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer took a standard
+            dummy text.
+          </p>
+          <ul class="build-with">
+            <li class="css">css</li>
+            <li class="html">html</li>
+            <li class="boostrap">Boostrap</li>
+            <li class="ruby">Ruby</li>
+          </ul>
+          <div class="button-container">
+            <button class="see-project-button" type="button">
+              See Project
+            </button>
+          </div>
         </div>
+      </div>
+      <div class="multipost-stories-item">
         <div class="img-placeholder-container"></div>
-        <h6 class="multipost-stories-title">Multi-Post Storie</h6>
-        <p class="multipost-story-prgph">
-          A daily selection of privately personalized reads; no accounts or
-          sign-ups required. has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a standard dummy text.
-        </p>
+        <div class="multipost-stories-container">
+          <h6 class="multipost-stories-title">Multi-Post Storie</h6>
+          <p class="multipost-story-prgph">
+            A daily selection of privately personalized reads; no accounts or
+            sign-ups required. has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer took a standard
+            dummy text.
+          </p>
+          <ul class="build-with">
+            <li class="css">css</li>
+            <li class="html">html</li>
+            <li class="boostrap">Boostrap</li>
+            <li class="ruby">Ruby</li>
+          </ul>
+          <div class="button-container">
+            <button class="see-project-button" type="button">
+              See Project
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="multipost-stories-item multipost-stories-item1">
+        <div class="img-placeholder-container"></div>
+        <div class="multipost-stories-container">
+          <h6 class="multipost-stories-title">Multi-Post Storie</h6>
+          <p class="multipost-story-prgph">
+            A daily selection of privately personalized reads; no accounts or
+            sign-ups required. has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer took a standard
+            dummy text.
+          </p>
 
-        <ul class="build-with">
-          <li class="css">css</li>
-          <li class="html">html</li>
-          <li class="boostrap">Boostrap</li>
-          <li class="ruby">Ruby</li>
-        </ul>
-        <div class="button-container">
-          <button class="see-project-button" type="button">See Project</button>
+          <ul class="build-with">
+            <li class="css">css</li>
+            <li class="html">html</li>
+            <li class="boostrap">Boostrap</li>
+            <li class="ruby">Ruby</li>
+          </ul>
+          <div class="button-container">
+            <button class="see-project-button" type="button">
+              See Project
+            </button>
+          </div>
         </div>
-      </section>
-      <section class="social-medias media1">
-        <h1 class="lets-connect-heading">LET'S CONNECT</h1>
-        <ul class="social-media-icons">
-          <li>
-            <a href="#"
-              ><img class="social-icon" src="./assets/caticon.png" alt="m icon"
-            /></a>
-          </li>
-          <li>
-            <a href="#"
-              ><img
-                class="social-icon"
-                src="./assets/linkedin-icon.png"
-                alt="linkedin"
-            /></a>
-          </li>
-          <li>
-            <a href="#"
-              ><img
-                class="social-icon"
-                src="./assets/fingerpic.png"
-                alt="finger-icon"
-            /></a>
-          </li>
-          <li>
-            <a href="#"
-              ><img
-                class="social-icon"
-                src="./assets/twittericon.png"
-                alt="twitter icon"
-            /></a>
-          </li>
-          <li>
-            <a href="#"
-              ><img
-                class="social-icon"
-                src="./assets/Vector2.png"
-                alt="in icon"
-            /></a>
-          </li>
-        </ul>
-        <h2 class="my-work">
-          <img
-            src="./assets/arrow-icon.png"
-            alt="arrow icon"
-            class="arrow-icon"
-          /><span>Work</span>
-        </h2>
-      </section>
-      <footer class="section-three">
-          
-        <div >
+      </div>
+    </section>
+    <section class="social-medias media1">
+      <section class="section-three">
+        <div>
           <h4 class="contact-us-heading">CONTACT US</h4>
+          <h4 class="contact-us-heading contact-us-heading2">
+            Let's &nbsp; chat
+          </h4>
           <p class="my-skills">
             If you have an application you are interested in developing, a
-            feature that you need built or a project that needs coding. I’d love
-            to help with it
+            feature that you need built or a project that needs coding. I’d
+            love to help with it
           </p>
           <form action="https://formspree.io/f/xwkyoyjb" method="post" id="my-form">
-            <input type="text" placeholder="Text input" id="text-input" maxlength="30" required/>
-            <input
-              type="email"
-              placeholder="ymuliku@gmail.com"
-              id="mail-input"
-              name="_replyto"
-              required
-            />
-            <textarea
-              name="text-erea"
-              cols="30"
-              rows="10"
-              placeholder="Enter text here"
-              maxlength="500"
-              required
-            ></textarea>
+            <input type="text" placeholder="Yannick" class="text-input" maxlength="30" required />
+            <input type="email" placeholder="ymuliku@gmail.com" id="mail-input" name="_replyto" required />
+            <textarea name="text-erea" cols="30" rows="10" placeholder="Enter text here" maxlength="500"
+              required></textarea>
             <div class="button-container" id="last-btn">
-              <button type="submit" class="see-project-button" >See Project</button>
+              <button type="submit" class="see-project-button last-btn">
+                See Project
+              </button>
             </div>
           </form>
-          
         </div>
-      </footer>
-      <section class="social-medias">
-        <ul class="social-media-icons">
-          <li>
-            <a href="#"
-              ><img class="social-icon" src="./assets/caticon.png" alt="m icon"
-            /></a>
-          </li>
-          <li>
-            <a href="#"
-              ><img
-                class="social-icon"
-                src="./assets/linkedin-icon.png"
-                alt="linkedin"
-            /></a>
-          </li>
-          <li>
-            <a href="#"
-              ><img
-                class="social-icon"
-                src="./assets/fingerpic.png"
-                alt="finger-icon"
-            /></a>
-          </li>
-          <li>
-            <a href="#"
-              ><img
-                class="social-icon"
-                src="./assets/twittericon.png"
-                alt="twitter icon"
-            /></a>
-          </li>
-          <li>
-            <a href="#"
-              ><img
-                class="social-icon"
-                src="./assets/Vector2.png"
-                alt="in icon"
-            /></a>
-          </li>
-        </ul>
-        <p class="footer-email">ymulikuza@gmail.com</p>
       </section>
-    </main>
-  </body>
+      <footer class="footer">
+        <section class="social-medias social-medias-dsktop">
+          <ul class="social-media-icons footer-item">
+            <li>
+              <a href="#"><img class="social-icon" src="./assets/caticon.png" alt="m icon" /></a>
+            </li>
+            <li>
+              <a href="#"><img class="social-icon" src="./assets/linkedin-icon.png" alt="linkedin" /></a>
+            </li>
+            <li>
+              <a href="#"><img class="social-icon" src="./assets/fingerpic.png" alt="finger-icon" /></a>
+            </li>
+            <li>
+              <a href="#"><img class="social-icon" src="./assets/twittericon.png" alt="twitter icon" /></a>
+            </li>
+            <li>
+              <a href="#"><img class="social-icon" src="./assets/Vector2.png" alt="in icon" /></a>
+            </li>
+          </ul>
+          <p class="footer-email footer-item footer-item1">
+            ymulikuza@gmail.com
+          </p>
+        </section>
+      </footer>
+    </section>
+  </main>
+</body>
+
 </html>
