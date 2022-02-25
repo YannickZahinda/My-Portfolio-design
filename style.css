@@ -302,7 +302,7 @@ span {
 
 .footer-email {
   margin: 20px 0;
-  color: rgba(255, 255, 255, 0.863);
+  color: #ebebff;
 }
 
 .footer {
@@ -500,6 +500,7 @@ textarea {
   .social-medias-dsktop {
     display: flex;
     justify-content: center;
+    margin-top: 0px;
   }
 
   .social-medias {
@@ -508,6 +509,7 @@ textarea {
 
   .footer-item {
     margin-left: 30px;
+    color: #ebebff;
   }
 
   .section-three {
