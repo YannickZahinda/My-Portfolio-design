@@ -29,7 +29,10 @@ To get a local copy up and running follow these simple example steps.
 
 ### Deployment
 
+```
+ https://yannickzahinda.github.io/Yannick/
 
+``` 
 
 ## Authors
 
