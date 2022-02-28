@@ -17,6 +17,7 @@ body {
 }
 
 .wrapper {
+  width: max-content;
   background: url("./assets/top-circles.png") no-repeat;
   background-size: cover;
   display: grid;
@@ -204,13 +205,13 @@ span {
 }
 
 .img-placeholder-container:hover {
-  height: 236px;
+  height: 290px;
   transition: 1s ease;
   border-radius: 10px;
-  width: 544px;
   box-shadow: inset rgba(68, 86, 167, 0.459) 1px 4px 5px 5px;
   cursor: progress;
 }
+
 
 .multipost-stories-title {
   height: max-content;
@@ -491,6 +492,15 @@ textarea {
     background-size: auto;
     background-position: center bottom;
     padding-top: 50px;
+  }
+
+  .img-placeholder-container:hover {
+    height: 236px;
+    transition: 1s ease;
+    border-radius: 10px;
+    width: 544px;
+    box-shadow: inset rgba(68, 86, 167, 0.459) 1px 4px 5px 5px;
+    cursor: progress;
   }
 
   .my-recent-work {
