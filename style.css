@@ -17,6 +17,7 @@ body {
 }
 
 .wrapper {
+  width: max-content;
   background: url("./assets/top-circles.png") no-repeat;
   background-size: cover;
   display: grid;
@@ -39,6 +40,10 @@ header {
   font-size: 18px;
   line-height: 16px;
   align-self: center;
+  animation-name: Logo_rotation;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-delay: 3s;
 }
 
 nav a {
@@ -199,6 +204,14 @@ span {
   height: 236px;
 }
 
+.img-placeholder-container:hover {
+  height: 290px;
+  transition: 1s ease;
+  border-radius: 10px;
+  box-shadow: inset rgba(68, 86, 167, 0.459) 1px 4px 5px 5px;
+  cursor: progress;
+}
+
 .multipost-stories-title {
   height: max-content;
   color: #fff;
@@ -247,6 +260,7 @@ span {
   height: 49px;
   background-color: #9390ff;
   border: none;
+  transition: 2s ease;
 }
 
 .see-project-button:hover {
@@ -479,6 +493,20 @@ textarea {
     padding-top: 50px;
   }
 
+  .img-placeholder-container {
+    margin: 0;
+    width: 504px;
+  }
+
+  .img-placeholder-container:hover {
+    height: 236px;
+    transition: 1s ease;
+    border-radius: 10px;
+    width: 544px;
+    box-shadow: inset rgba(68, 86, 167, 0.459) 1px 4px 5px 5px;
+    cursor: progress;
+  }
+
   .my-recent-work {
     color: #9390ff;
     padding: 40px;
@@ -557,9 +585,19 @@ textarea {
     margin: 0;
     width: 448px;
   }
+}
 
-  .img-placeholder-container {
-    margin: 0;
-    width: 504px;
+/* ------ Animations ------ */
+
+@keyframes Logo_rotation {
+  0% {
+    transform: rotateX(360deg);
+  }
+}
+
+@keyframes change-colour {
+  0% {
+    background-color: blueviolet;
+    transition: 3s ease;
   }
 }
