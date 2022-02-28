@@ -212,7 +212,6 @@ span {
   cursor: progress;
 }
 
-
 .multipost-stories-title {
   height: max-content;
   color: #fff;
@@ -494,6 +493,11 @@ textarea {
     padding-top: 50px;
   }
 
+  .img-placeholder-container {
+    margin: 0;
+    width: 504px;
+  }
+
   .img-placeholder-container:hover {
     height: 236px;
     transition: 1s ease;
@@ -580,11 +584,6 @@ textarea {
   .multipost-story-prgph {
     margin: 0;
     width: 448px;
-  }
-
-  .img-placeholder-container {
-    margin: 0;
-    width: 504px;
   }
 }
 
