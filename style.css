@@ -504,7 +504,7 @@ textarea {
     border-radius: 10px;
     width: 544px;
     box-shadow: inset rgba(68, 86, 167, 0.459) 1px 4px 5px 5px;
-    cursor: progress;
+    cursor: pointer;
   }
 
   .my-recent-work {
