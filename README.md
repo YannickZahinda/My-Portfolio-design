@@ -29,10 +29,9 @@ To get a local copy up and running follow these simple example steps.
 
 ### Deployment
 
-```
-https://yannickzahinda.github.io/My-Portfolio-design/
+[https://yannickzahinda.github.io/My-Portfolio-design/
+](https://yannickzahinda.github.io/My-Portfolio-design/)
 
-```
 
 ## Authors
 
