@@ -25,7 +25,8 @@ body {
 
 .menu-tag {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  padding: 15px;
 }
 
 .right-arrow {
@@ -52,8 +53,13 @@ body {
   background-position: center top 80px;
   font-size: 24px;
   font-family: 'Roboto', sans-serif;
-  padding-top: 40px;
+  padding-top: 30px;
   transition: 0.7s;
+  overflow: hidden;
+}
+
+.active>.last-tag{
+  visibility: hidden;
 }
 
 .snapshot {
