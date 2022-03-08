@@ -5,14 +5,68 @@
   font-family: Roboto, sans-serif;
 }
 
+
 body {
-  /* width: max-content; */
   background-color: #140f5ef5;
   height: max-content;
   margin: 0 auto;
 }
 
 .menu-list {
+  display: none;
+  transition: 0.3s;
+  padding: 0 25px 25px 25px;
+}
+
+.cross-icon-container{
+  display: flex;
+  justify-content: flex-end;
+  padding-bottom: 25px;
+}
+
+.menu-tag{
+  display: flex;
+  justify-content: space-around;
+}
+
+.right-arrow{
+  height: 17px;
+  vertical-align: middle;
+}
+
+.arrow-icon-container{
+  display: none;
+}
+
+
+.active{
+  margin-bottom: 30px;
+  position: fixed;
+  left: 0%;
+  top: 0%;
+  width: 100%;
+  min-height: 100%;
+  border-radius: 4px;
+  display: block;
+  background: url("./assets/mobile-menu-shape.png") #16155b no-repeat;
+  background-size: contain;
+  background-position: 0 top  0 bottom;
+  font-size: 24px;
+  font-family: 'Roboto', sans-serif;
+  padding-top: 40px;
+  transition: 0.7s;
+}
+
+.snapshot{
+  width: 100%;
+  height: 100%;
+}
+
+
+#menu-closing-icon{
+  width: 12px;
+  height: 12px;
+  align-self: flex-end;
   display: none;
 }
 
@@ -28,9 +82,10 @@ body {
 header {
   color: rgb(238 230 230);
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   margin: 40px;
 }
+
 
 .my-logo {
   flex: 1;
@@ -54,10 +109,12 @@ nav a {
   margin: 6px;
 }
 
+
 .my-logo a {
   text-decoration: none;
   color: #fff;
   font-size: 18px;
+  transition: 0.7s;
 }
 
 .section-one,
@@ -199,18 +256,15 @@ span {
 
 .img-placeholder-container {
   margin: 40px 0 50px;
-  width: 100%;
   background-color: #fff;
-  height: 236px;
+  height: max-content;
 }
 
-.img-placeholder-container:hover {
-  height: 290px;
-  transition: 1s ease;
-  border-radius: 10px;
-  box-shadow: inset rgba(68, 86, 167, 0.459) 1px 4px 5px 5px;
-  cursor: progress;
+.img-placeholder-container:hover{
+ border-radius: 7px;
+  transition: 0.6s;
 }
+
 
 .multipost-stories-title {
   height: max-content;
@@ -331,9 +385,6 @@ textarea {
   align-self: center;
 }
 
-.arrow-icon-container {
-  display: none;
-}
 
 .contact-us-heading2 {
   display: none;
@@ -349,14 +400,23 @@ textarea {
 }
 
 @media screen and (min-width: 992px) {
+  .cross-icon-container{
+    display: none;
+  }
+  
   .my-logo {
     width: 77px;
     height: 20px;
+    margin: 0;
   }
 
   .section-one,
   .section-two {
     border: none;
+  }
+
+  .active{
+    visibility: hidden;
   }
 
   .my-skills {
@@ -377,17 +437,25 @@ textarea {
     display: none;
   }
 
+  .menu-tag{
+    padding-left: 15px;
+  }
+
+  .right-arrow{
+    display: none;
+  }
+
+  #menu-link{
+    margin-left: 20px;
+  }
+
   .menu-list ul li a,
   .menu-list {
     text-decoration: none;
     color: #fff;
-    margin: 15px;
+    margin-top: 15px;
     list-style-type: none;
     display: flex;
-  }
-
-  .menu-list ul li a {
-    display: block;
   }
 
   #mail-img {
@@ -498,14 +566,14 @@ textarea {
     width: 504px;
   }
 
-  .img-placeholder-container:hover {
-    height: 236px;
-    transition: 1s ease;
-    border-radius: 10px;
-    width: 544px;
-    box-shadow: inset rgba(68, 86, 167, 0.459) 1px 4px 5px 5px;
+  .img-placeholder-container:hover{
+    height: 238px;
+    width: 515px;
+    border-radius: 7px;
+    transition: 0.7s ease;
     cursor: pointer;
   }
+
 
   .my-recent-work {
     color: #9390ff;
@@ -585,6 +653,7 @@ textarea {
     margin: 0;
     width: 448px;
   }
+
 }
 
 /* ------ Animations ------ */
@@ -592,12 +661,5 @@ textarea {
 @keyframes Logo_rotation {
   0% {
     transform: rotateX(360deg);
-  }
-}
-
-@keyframes change-colour {
-  0% {
-    background-color: blueviolet;
-    transition: 3s ease;
   }
 }
