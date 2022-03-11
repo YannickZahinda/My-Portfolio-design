@@ -61,7 +61,16 @@
   height: 181px;
 }
 
-#pop-btn {
+.language-pop {
+  border-right: 1px solid rgba(253, 253, 253, 0.925);
+  padding-right: 10px;
+  height: 40px;
+  margin-left: 10px;
+  color: rgba(255, 255, 255, 0.76);
+}
+
+#pop-btn-see-project,
+#pop-btn-see-source {
   text-align: center;
 }
 
@@ -86,9 +95,19 @@
   height: 48px;
 }
 
+.see-source-btn:hover{
+  box-shadow: 0px 8px 16px rgba(125, 115, 252, 0.48);
+  transition: 0.4s;
+}
+
 .see-live-btn {
   width: 108px;
   height: 48px;
+}
+
+.see-live-btn:hover{
+  box-shadow: 0px 8px 16px rgba(125, 115, 252, 0.48);
+  transition: 0.4s;
 }
 
 .cat-icon {
@@ -98,6 +117,11 @@
 
 .popup-item {
   flex-direction: column;
+}
+
+.pup-up-build-with{
+  display: flex;
+  justify-content: center;
 }
 
 @media screen and (min-width: 992px) {
@@ -186,5 +210,15 @@
 
   .language {
     padding-top: 0;
+  }
+
+  .see-source-btn:hover{
+    box-shadow: 0px 8px 16px rgba(125, 115, 252, 0.48);
+    transition: 0.4s;
+  }
+
+  .see-live-btn:hover{
+    box-shadow: 0px 8px 16px rgba(125, 115, 252, 0.48);
+    transition: 0.4s;
   }
 }
