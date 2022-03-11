@@ -1,311 +1,421 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <title>Microverse student Portfolio</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="./style.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&display=swap" rel="stylesheet" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <title>Microverse student Portfolio</title>
-</head>
-
-<body>
-  <main class="wrapper">
-    <header>
-      <div class="my-logo"><a href="#">Yann</a></div>
-      <nav class="menu-lines">
-        <div class="hamburger-container" >
-          <img src="./assets/icon-menu.png" alt="menu icon" id="menu-icon" />
-        </div>
-        <ul class="menu-list" id="menu-list">
-          <li class="cross-icon-container"><img src="./assets/Icon.png" alt="cross icon" id = "menu-closing-icon"></li>
-          <li class="menu-tag">
-            <a href="#Portfolio" class = "menu-link">Portfolio</a>
-            <div class="arrow-right-container">
-              <img src="./assets/let-arrow-icon.png" alt="right arrow" class="right-arrow">
+  <body>
+    <!-- popup -->
+    <div class="project" id="pop-up-window">
+      <div class="popup-project">
+        <div
+          class="multipost-stories-item popup-item"
+          id="multipost-stories-item"
+        >
+          <div class="pop-up-header" id="pop-up-header">
+            <h6
+              class="multipost-stories-title pop-up-multipoststories-head"
+              id="multipost-stories-title"
+            >
+              
+            </h6>
+            <div class="closing-pop-up-container">
+              <button type = "button"  id="button-closing-pop">&times;</button>
             </div>
-          </li>
-          <li class="menu-tag">
-            <a href="#about" class = "menu-link">About</a>
-            <div>
-              <img src="./assets/let-arrow-icon.png" alt="right arrow" class="right-arrow">
+          </div>
+          <div class="img-placeholder-container snapshot-container">
+            <img
+              src="./assets/snapshot-portfolio.png"
+              alt="snapshot-portfolio"
+              class="pop-up-snapshot"
+              id="pop-up-snapshot"
+            />
+          </div>
+          <div class="multipost-stories-container pop-up-multipost-container">
+            <p
+              class="multipost-story-prgph pop-prgph"
+              id="multipost-story-prgph"
+            ></p>
+            <ul class="build-with pup-up-build-with" id="pup-up-build-with">
+              <li class="language tech"></li>
+              <li class="language tech"></li>
+              <li class="language tech"></li>
+            </ul>
+            <div class="buttons-container">
+              <div class="button-container" id="pop-btn-see-project">
+                <button
+                  class="see-project-button see-live-btn"
+                  id="see-live-btn"
+                  type="button"
+                >
+                  See live
+                  <span
+                    ><img
+                      src="./assets/see-live-icon.png"
+                      alt="see live icon"
+                      class="see-live-icon"
+                  /></span>
+                </button>
+              </div>
+              <div class="button-container" id="pop-btn-see-source">
+                <button
+                  class="see-project-button see-source-btn"
+                  id="see-source-btn"
+                  type="button"
+                >
+                  See Source
+                  <span
+                    ><img
+                      src="./assets/caticon.png"
+                      alt="cat icon"
+                      class="cat-icon"
+                  /></span>
+                </button>
+              </div>
             </div>
-          </li>
-          <li class="menu-tag">
-            <a href="#contact" class = "menu-link">Contact</a>
-            <div>
-              <img src="./assets/let-arrow-icon.png" alt="right arrow" class="right-arrow">
-            </div>
-          </li>
-          <li class="menu-tag last-tag">
-            <a href="#"><img src="./assets/mail-icon.png" alt="mail-icon" id="mail-img" /></a>
-            <div>
-              <img src="./assets/let-arrow-icon.png" alt="right arrow" class="right-arrow">
-            </div>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <div class="section-wrapper-1">
-      <section class="section-one">
-        <div>
-          <h1>Yannick Zahinda</h1>
-          <div class="description1" id="about">
-            <h4>Software Developper</h4>
-            <p class="my-skills">
-              I can help you build a product , feature or website Look through
-              some of my work and experience! If you like what you see and have
-              a project you need coded, don’t hestiate to contact me.
-            </p>
           </div>
         </div>
-      </section>
-      <div class="languages-section">
-        <ul>
-          <li class="lanuage-title">Language</li>
-          <li>
-            <ul>
-              <li class="language-item">Javascript</li>
-              <li class="language-item">Ruby</li>
-              <li class="language-item">HTML</li>
-              <li class="language-item">CSS</li>
-            </ul>
-          </li>
-        </ul>
-        <ul>
-          <li class="lanuage-title">Framework</li>
-          <li>
-            <ul>
-              <li class="language-item">Boostrap</li>
-              <li class="language-item">Ruby on Rails</li>
-              <li class="language-item">RSPec</li>
-              <li class="language-item">Selenium</li>
-            </ul>
-          </li>
-        </ul>
-        <ul>
-          <li class="lanuage-title">Skills</li>
-          <li>
-            <ul>
-              <li class="language-item">CodeKit</li>
-              <li class="language-item">Github</li>
-              <li class="language-item">Gitlab</li>
-              <li class="language-item">Terminal</li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-      <section class="midle-section">
-        <div class="social-medias">
-          <ul class="social-media-icons social-media-icons2">
-            <li>
-              <a href="#"><img class="social-icon" src="./assets/caticon.png" alt="m icon" /></a>
-            </li>
-            <li>
-              <a href="#"><img class="social-icon" src="./assets/linkedin-icon.png" alt="linkedin" /></a>
-            </li>
-            <li>
-              <a href="#"><img class="social-icon" src="./assets/fingerpic.png" alt="finger-icon" /></a>
-            </li>
-            <li>
-              <a href="#"><img class="social-icon" src="./assets/twittericon.png" alt="twitter icon" /></a>
-            </li>
-            <li>
-              <a href="#"><img class="social-icon" src="./assets/Vector2.png" alt="in icon" /></a>
-            </li>
-          </ul>
-          <h2 class="my-work my-work2">
-            <img src="./assets/arrow-icon.png" alt="arrow icon" class="arrow-icon" /><span>Work</span>
-          </h2>
-        </div>
-      </section>
-    </div>
-    <div class="arrow-icon-container">
-      <div class="my-work my-work">
-        <span>Work</span><img src="./assets/arrow-icon.png" alt="arrow icon" class="arrow-icon" />
-      </div>
-      <ul class="social-media-icons">
-        <li class="item">
-          <a href="#"><img class="social-icon" src="./assets/caticon.png" alt="m icon" /></a>
-        </li>
-        <li class="item">
-          <a href="#"><img class="social-icon" src="./assets/linkedin-icon.png" alt="linkedin" /></a>
-        </li>
-        <li class="item">
-          <a href="#"><img class="social-icon" src="./assets/fingerpic.png" alt="finger-icon" /></a>
-        </li>
-        <li class="item">
-          <a href="#"><img class="social-icon" src="./assets/twittericon.png" alt="twitter icon" /></a>
-        </li>
-        <li class="item">
-          <a href="#"><img class="social-icon" src="./assets/Vector2.png" alt="in icon" /></a>
-        </li>
-      </ul>
-      <div class="my-work">
-        <img src="./assets/arrow-icon.png" alt="arrow icon" class="arrow-icon" /><span>Work</span>
       </div>
     </div>
-    <h5 class="my-recent-work">My recent work</h5>
-    <section class="my-recent-work-section">
-      <div class="multipost-stories-item">
-        <div class="img-placeholder-container">
-          <img src="./assets/snapshot-portfolio.png" alt="snapshot-portfolio" class="snapshot">
-        </div>
-        <div class="multipost-stories-container">
-          <h6 class="multipost-stories-title">Multi-Post Storie</h6>
-          <p class="multipost-story-prgph">
-            A daily selection of privately personalized reads; no accounts
-            sign-ups required. has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took a standard
-            dummy text.
-          </p>
-          <ul class="build-with">
-            <li class="css">css</li>
-            <li class="html">html</li>
-            <li class="boostrap">Boostrap</li>
-            <li class="ruby">Ruby</li>
-          </ul>
-          <div class="button-container">
-            <button class="see-project-button" type="button">
-              See Project
-            </button>
+    <!-- popup -->
+    <main class="wrapper">
+      <header>
+        <div class="my-logo"><a href="#">Yann</a></div>
+        <nav class="menu-lines">
+          <div class="hamburger-container">
+            <img src="./assets/icon-menu.png" alt="menu icon" id="menu-icon" />
           </div>
-        </div>
-      </div>
-
-      <div class="multipost-stories-item multipost-stories-item1">
-        <div class="img-placeholder-container">
-          <img src="./assets/snapshot-portfolio.png" alt="snapshot-portfolio" class="snapshot">
-        </div>
-        <div class="multipost-stories-container">
-          <h6 class="multipost-stories-title">Multi-Post Storie</h6>
-          <p class="multipost-story-prgph">
-            A daily selection of privately personalized reads; no accounts or
-            sign-ups required. has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took a standard
-            dummy text.
-          </p>
-          <ul class="build-with">
-            <li class="css">css</li>
-            <li class="html">html</li>
-            <li class="boostrap">Boostrap</li>
-            <li class="ruby">Ruby</li>
+          <ul class="menu-list" id="menu-list">
+            <li class="cross-icon-container">
+              <img
+                src="./assets/Icon.png"
+                alt="cross icon"
+                id="menu-closing-icon"
+              />
+            </li>
+            <li class="menu-tag">
+              <a href="#Portfolio" class="menu-link">Portfolio</a>
+              <div class="arrow-right-container">
+                <img
+                  src="./assets/let-arrow-icon.png"
+                  alt="right arrow"
+                  class="right-arrow"
+                />
+              </div>
+            </li>
+            <li class="menu-tag">
+              <a href="#about" class="menu-link">About</a>
+              <div>
+                <img
+                  src="./assets/let-arrow-icon.png"
+                  alt="right arrow"
+                  class="right-arrow"
+                />
+              </div>
+            </li>
+            <li class="menu-tag">
+              <a href="#contact" class="menu-link">Contact</a>
+              <div>
+                <img
+                  src="./assets/let-arrow-icon.png"
+                  alt="right arrow"
+                  class="right-arrow"
+                />
+              </div>
+            </li>
+            <li class="menu-tag last-tag">
+              <a href="#"
+                ><img
+                  src="./assets/mail-icon.png"
+                  alt="mail-icon"
+                  id="mail-img"
+              /></a>
+              <div>
+                <img
+                  src="./assets/let-arrow-icon.png"
+                  alt="right arrow"
+                  class="right-arrow"
+                />
+              </div>
+            </li>
           </ul>
-          <div class="button-container">
-            <button class="see-project-button" type="button">
-              See Project
-            </button>
-          </div>
-        </div>
-      </div>
-      <div class="multipost-stories-item">
-        <div class="img-placeholder-container">
-          <img src="./assets/snapshot-portfolio.png" alt="snapshot-portfolio" class="snapshot">
-        </div>
-        <div class="multipost-stories-container">
-          <h6 class="multipost-stories-title">Multi-Post Storie</h6>
-          <p class="multipost-story-prgph">
-            A daily selection of privately personalized reads; no accounts or
-            sign-ups required. has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took a standard
-            dummy text.
-          </p>
-          <ul class="build-with">
-            <li class="css">css</li>
-            <li class="html">html</li>
-            <li class="boostrap">Boostrap</li>
-            <li class="ruby">Ruby</li>
-          </ul>
-          <div class="button-container">
-            <button class="see-project-button" type="button">
-              See Project
-            </button>
-          </div>
-        </div>
-      </div>
-      <div class="multipost-stories-item multipost-stories-item1">
-        <div class="img-placeholder-container">
-          <img src="./assets/snapshot-portfolio.png" alt="snapshot-portfolio" class="snapshot">
-        </div>
-        <div class="multipost-stories-container">
-          <h6 class="multipost-stories-title">Multi-Post Storie</h6>
-          <p class="multipost-story-prgph">
-            A daily selection of privately personalized reads; no accounts or
-            sign-ups required. has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took a standard
-            dummy text.
-          </p>
-
-          <ul class="build-with">
-            <li class="css">css</li>
-            <li class="html">html</li>
-            <li class="boostrap">Boostrap</li>
-            <li class="ruby">Ruby</li>
-          </ul>
-          <div class="button-container">
-            <button class="see-project-button" type="button">
-              See Project
-            </button>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="social-medias media1">
-      <section class="section-three">
-        <div>
-          <h4 class="contact-us-heading" id="contact">CONTACT US</h4>
-          <h4 class="contact-us-heading contact-us-heading2">
-            Let's &nbsp; chat
-          </h4>
-          <p class="my-skills">
-            If you have an application you are interested in developing, a
-            feature that you need built or a project that needs coding. I’d
-            love to help with it
-          </p>
-          <form action="https://formspree.io/f/xwkyoyjb" method="post" id="my-form">
-            <input type="text" placeholder="Yannick" class="text-input" maxlength="30" required />
-            <input type="email" placeholder="ymuliku@gmail.com" id="mail-input" name="_replyto" required />
-            <textarea name="text-erea" cols="30" rows="10" placeholder="Enter text here" maxlength="500"
-              required></textarea>
-            <div class="button-container" id="last-btn">
-              <button type="submit" class="see-project-button last-btn">
-                See Project
-              </button>
+        </nav>
+      </header>
+      <div class="section-wrapper-1">
+        <section class="section-one">
+          <div>
+            <h1>Yannick Zahinda</h1>
+            <div class="description1" id="about">
+              <h4>Software Developper</h4>
+              <p class="my-skills">
+                I can help you build a product , feature or website Look through
+                some of my work and experience! If you like what you see and
+                have a project you need coded, don’t hestiate to contact me.
+              </p>
             </div>
-          </form>
-        </div>
-      </section>
-      <footer class="footer">
-        <section class="social-medias social-medias-dsktop">
-          <ul class="social-media-icons footer-item">
-            <li>
-              <a href="#"><img class="social-icon" src="./assets/caticon.png" alt="m icon" /></a>
-            </li>
-            <li>
-              <a href="#"><img class="social-icon" src="./assets/linkedin-icon.png" alt="linkedin" /></a>
-            </li>
-            <li>
-              <a href="#"><img class="social-icon" src="./assets/fingerpic.png" alt="finger-icon" /></a>
-            </li>
-            <li>
-              <a href="#"><img class="social-icon" src="./assets/twittericon.png" alt="twitter icon" /></a>
-            </li>
-            <li>
-              <a href="#"><img class="social-icon" src="./assets/Vector2.png" alt="in icon" /></a>
-            </li>
-          </ul>
-          <p class="footer-email footer-item footer-item1">
-            ymulikuza@gmail.com
-          </p>
+          </div>
         </section>
-      </footer>
-    </section>
-  </main>
-  <script src="./app.js"></script>
-</body>
-
+        <div class="languages-section">
+          <ul>
+            <li class="lanuage-title">Language</li>
+            <li>
+              <ul>
+                <li class="language-item">Javascript</li>
+                <li class="language-item">Ruby</li>
+                <li class="language-item">HTML</li>
+                <li class="language-item">CSS</li>
+              </ul>
+            </li>
+          </ul>
+          <ul>
+            <li class="lanuage-title">Framework</li>
+            <li>
+              <ul>
+                <li class="language-item">Boostrap</li>
+                <li class="language-item">Ruby on Rails</li>
+                <li class="language-item">RSPec</li>
+                <li class="language-item">Selenium</li>
+              </ul>
+            </li>
+          </ul>
+          <ul>
+            <li class="lanuage-title">Skills</li>
+            <li>
+              <ul>
+                <li class="language-item">CodeKit</li>
+                <li class="language-item">Github</li>
+                <li class="language-item">Gitlab</li>
+                <li class="language-item">Terminal</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <section class="midle-section">
+          <div class="social-medias">
+            <ul class="social-media-icons social-media-icons2">
+              <li>
+                <a href="#"
+                  ><img
+                    class="social-icon"
+                    src="./assets/caticon.png"
+                    alt="m icon"
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img
+                    class="social-icon"
+                    src="./assets/linkedin-icon.png"
+                    alt="linkedin"
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img
+                    class="social-icon"
+                    src="./assets/fingerpic.png"
+                    alt="finger-icon"
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img
+                    class="social-icon"
+                    src="./assets/twittericon.png"
+                    alt="twitter icon"
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img
+                    class="social-icon"
+                    src="./assets/Vector2.png"
+                    alt="in icon"
+                /></a>
+              </li>
+            </ul>
+            <h2 class="my-work my-work2">
+              <img
+                src="./assets/arrow-icon.png"
+                alt="arrow icon"
+                class="arrow-icon"
+              /><span>Work</span>
+            </h2>
+          </div>
+        </section>
+      </div>
+      <div class="arrow-icon-container">
+        <div class="my-work my-work">
+          <span>Work</span
+          ><img
+            src="./assets/arrow-icon.png"
+            alt="arrow icon"
+            class="arrow-icon"
+          />
+        </div>
+        <ul class="social-media-icons">
+          <li class="item">
+            <a href="#"
+              ><img class="social-icon" src="./assets/caticon.png" alt="m icon"
+            /></a>
+          </li>
+          <li class="item">
+            <a href="#"
+              ><img
+                class="social-icon"
+                src="./assets/linkedin-icon.png"
+                alt="linkedin"
+            /></a>
+          </li>
+          <li class="item">
+            <a href="#"
+              ><img
+                class="social-icon"
+                src="./assets/fingerpic.png"
+                alt="finger-icon"
+            /></a>
+          </li>
+          <li class="item">
+            <a href="#"
+              ><img
+                class="social-icon"
+                src="./assets/twittericon.png"
+                alt="twitter icon"
+            /></a>
+          </li>
+          <li class="item">
+            <a href="#"
+              ><img
+                class="social-icon"
+                src="./assets/Vector2.png"
+                alt="in icon"
+            /></a>
+          </li>
+        </ul>
+        <div class="my-work">
+          <img
+            src="./assets/arrow-icon.png"
+            alt="arrow icon"
+            class="arrow-icon"
+          /><span>Work</span>
+        </div>
+      </div>
+      <h5 class="my-recent-work">My recent work</h5>
+      <section
+        class="my-recent-work-section"
+        id="my-recent-work-section"
+      ></section>
+      <section class="social-medias media1">
+        <section class="section-three">
+          <div>
+            <h4 class="contact-us-heading" id="contact">CONTACT US</h4>
+            <h4 class="contact-us-heading contact-us-heading2">
+              Let's &nbsp; chat
+            </h4>
+            <p class="my-skills">
+              If you have an application you are interested in developing, a
+              feature that you need built or a project that needs coding. I’d
+              love to help with it
+            </p>
+            <form
+              action="https://formspree.io/f/xwkyoyjb"
+              method="post"
+              id="my-form"
+            >
+              <input
+                type="text"
+                placeholder="Yannick"
+                class="text-input"
+                maxlength="30"
+                required
+              />
+              <input
+                type="email"
+                placeholder="ymuliku@gmail.com"
+                id="mail-input"
+                name="_replyto"
+                required
+              />
+              <textarea
+                name="text-erea"
+                cols="30"
+                rows="10"
+                placeholder="Enter text here"
+                maxlength="500"
+                required
+              ></textarea>
+              <div class="button-container" id="last-btn">
+                <button type="submit" class="see-project-button last-btn">
+                  See Project
+                </button>
+              </div>
+            </form>
+          </div>
+        </section>
+        <footer class="footer">
+          <section class="social-medias social-medias-dsktop">
+            <ul class="social-media-icons footer-item">
+              <li>
+                <a href="#"
+                  ><img
+                    class="social-icon"
+                    src="./assets/caticon.png"
+                    alt="m icon"
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img
+                    class="social-icon"
+                    src="./assets/linkedin-icon.png"
+                    alt="linkedin"
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img
+                    class="social-icon"
+                    src="./assets/fingerpic.png"
+                    alt="finger-icon"
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img
+                    class="social-icon"
+                    src="./assets/twittericon.png"
+                    alt="twitter icon"
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img
+                    class="social-icon"
+                    src="./assets/Vector2.png"
+                    alt="in icon"
+                /></a>
+              </li>
+            </ul>
+            <p class="footer-email footer-item footer-item1">
+              ymulikuza@gmail.com
+            </p>
+          </section>
+        </footer>
+      </section>
+    </main>
+    <script type="text/javascript" src="./app.js"></script>
+    <script type="text/javascript" src="popup.js"></script>
+  </body>
 </html>
