@@ -360,7 +360,7 @@
                 required
               ></textarea>
               <div class="button-container" id="last-btn">
-                <button type="submit" class="see-project-button last-btn">
+                <button type="submit" class="see-project-button last-btn" onclick="saveData()">
                   See Project
                 </button>
                 <div id="error-message">Please, your email needs to be in lowercase</div>
@@ -419,8 +419,9 @@
         </footer>
       </section>
     </main>
-    <script src="./appvalidation.js"></script>
+    <script type="text/javascript" src="./appvalidation.js"></script>
     <script type="text/javascript" src="./app.js"></script>
     <script type="text/javascript" src="popup.js"></script>
+    <script type="text/javascript" src="./localStorage.js"></script>
   </body>
 </html>
