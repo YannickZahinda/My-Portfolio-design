@@ -5,13 +5,13 @@
 
 > Description the project.
 
-  For the fourth project in my portfolio website, I Used media queries to make sure that my website displays correctly on desktop screens.
+  For this project, we added the pop up window for displaying the project itself while clicking to the see project button
 
   
 
 ## Built With
 
-HTML CSS
+HTML CSS Javascript
 
 ## Live Demo
 
