@@ -1,13 +1,12 @@
-#error-message{
-    background-color: rgba(253, 253, 253, 0.966);
-    color: rgba(41, 38, 38, 0.856);
-    padding: 5px;
-    border-radius: 5px;
-    font-style: italic;
-    font-weight: 500;
-    margin-top: 4px;
-    font-size: 10px;
-    transition: 0.7s ease;
-    visibility: hidden;
-
+#error-message {
+  background-color: rgba(253, 253, 253, 0.966);
+  color: rgba(41, 38, 38, 0.856);
+  padding: 5px;
+  border-radius: 5px;
+  font-style: italic;
+  font-weight: 500;
+  margin-top: 4px;
+  font-size: 10px;
+  transition: 0.7s ease;
+  visibility: hidden;
 }
