@@ -2,8 +2,6 @@ const myForm = document.getElementById('my-form');
 const nameInput = document.getElementById('nam-input');
 const emailInput = document.getElementById('mail-input');
 const textErea = document.getElementById('text-erea-input');
-const resetBtn = document.getElementById('reset-btn');
-const submitBtn = document.getElementById('send');
 
 myForm.addEventListener('submit', (event) =>{
     const errorMessage = document.getElementById('error-message');
@@ -20,9 +18,3 @@ myForm.addEventListener('submit', (event) =>{
     }
 })
 
-resetBtn.addEventListener("click", ()=>{
-    // location.reload();
-    emailInput.value = '';
-    nameInput.value = '';
-    textErea.value = '';
-})

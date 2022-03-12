@@ -1,18 +1,18 @@
 //----------Pop up js------------//
 
-const popUpWindow = document.getElementById("pop-up-window");
-const myRecentWork = document.getElementById("my-recent-work-section");
-const title = document.getElementById("multipost-stories-title");
-const snapshotPic = document.getElementById("pop-up-snapshot");
-const PopUpParagr = document.getElementById("multipost-story-prgph");
-const languages = document.getElementById("pup-up-build-with");
-const seeLiveButton = document.getElementById("see-live-btn");
-const seeSourceButton = document.getElementById("see-source-btn");
-const closingButton = document.getElementById("button-closing-pop")
+const popUpWindow = document.getElementById('pop-up-window');
+const myRecentWork = document.getElementById('my-recent-work-section');
+const title = document.getElementById('multipost-stories-title');
+const snapshotPic = document.getElementById('pop-up-snapshot');
+const PopUpParagr = document.getElementById('multipost-story-prgph');
+const languages = document.getElementById('pup-up-build-with');
+const seeLiveButton = document.getElementById('see-live-btn');
+const seeSourceButton = document.getElementById('see-source-btn');
+const closingButton = document.getElementById('button-closing-pop')
 
 const myDataArray = [
   {
-    title: "Multipost stories",
+    title: 'Multipost stories',
     snapshotPicSrc: "./assets/snapshot-portfolio.png",
     prgphContent: `A daily selection of privately personalized reads; no accounts or
         sign-ups required. has been the industry's standard dummy text
@@ -24,7 +24,7 @@ const myDataArray = [
     seeSource: "https://github.com/YannickZahinda/My-Portfolio-design",
   },
   {
-    title: "Multipost stories",
+    title: 'Multipost stories',
     snapshotPicSrc: "./assets/snapshot-portfolio.png",
     prgphContent: `A daily selection of privately personalized reads; no accounts or
         sign-ups required. 
@@ -35,7 +35,7 @@ const myDataArray = [
     seeSource: "https://github.com/YannickZahinda/My-Portfolio-design",
   },
   {
-    title: "Multipost stories",
+    title: 'Multipost stories',
     snapshotPicSrc: "./assets/snapshot-portfolio.png",
     prgphContent: `A daily selection of privately personalized reads; no accounts or
         sign-ups required. re, explicabo repudiandae magnam deleniti obcaecati! Odit ipsam soluta doloremque velit autem deserunt dolore aliquid! has been the industry's standard dummy text
@@ -46,7 +46,7 @@ const myDataArray = [
     seeSource: "https://github.com/YannickZahinda/My-Portfolio-design",
   },
   {
-    title: "Multipost stories",
+    title: 'Multipost stories',
     snapshotPicSrc: "./assets/snapshot-portfolio.png",
     prgphContent: `A daily selection of privately personalized reads; no accounts or
         sign-ups required. has been re, explicabo repudiandae magnam deleniti obcaecati! Odit ipsam soluta doloremque velit autem deserunt dolore aliquid! the industry's standard dummy text
