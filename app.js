@@ -1,5 +1,5 @@
 const menuList = document.getElementById('menu-list');
-const HambergerMenu = document.getElementById('menu-icon');
+const hambergerMenu = document.getElementById('menu-icon');
 const closingIcon = document.getElementById('menu-closing-icon');
 
 hambergerMenu.addEventListener('click', () => {
