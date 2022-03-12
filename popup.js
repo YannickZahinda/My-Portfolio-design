@@ -1,3 +1,7 @@
+/* eslint-disable camelcase */
+/* eslint-disable no-unused-vars */
+/* eslint-disable func-names */
+
 const popUpWindow = document.getElementById('pop-up-window');
 const myRecentWork = document.getElementById('my-recent-work-section');
 const title = document.getElementById('multipost-stories-title');
@@ -73,7 +77,8 @@ function onpenWindowDataIncluded(i) {
   snapshotPic.src = myDataArray[i].snapshotPicSrc;
   PopUpParagr.innerText = popUpData.prgphContent;
   languages.innerHTML = popUpData.LanguagesBuildWith.map(
-    (lang) => `<li class='language-pop'>${lang}</li>`)
+    (lang) => `<li class='language-pop'>${lang}</li>`,
+  )
     .join('');
   seeLiveButton.onclick = () => {
     window.location.href = myDataArray[i].seeLiveBtn;

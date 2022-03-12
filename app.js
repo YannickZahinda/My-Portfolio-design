@@ -14,5 +14,4 @@ closingIcon.addEventListener('click', () => {
 document.querySelectorAll('.menu-link').forEach((n) => n.addEventListener('click', () => {
   menuList.classList.remove('active');
   hambergerMenu.classList.remove('active');
-  });
-);
+}));
