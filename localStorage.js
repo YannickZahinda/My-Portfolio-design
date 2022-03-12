@@ -3,15 +3,14 @@ const InputName = document.querySelector('#name-input');
 const email = document.querySelector('#mail-input');
 const message = document.querySelector('#text-erea-input');
 
- 
-function DataStorage(){
-    const userInfo = {
-        Name : InputName.value,
-        Email : email.value,
-        Message : message.value
-    }
-    
-    localStorage.setItem('userData', JSON.stringify(userInfo));
+function DataStorage() {
+  const userInfo = {
+    Name: InputName.value,
+    Email: email.value,
+    Message: message.value,
+  };
+
+  localStorage.setItem('userData', JSON.stringify(userInfo));
 }
 
 form.addEventListener('focusout', DataStorage);
