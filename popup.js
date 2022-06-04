@@ -1,6 +1,7 @@
 /* eslint-disable camelcase */
 /* eslint-disable no-unused-vars */
 /* eslint-disable func-names */
+/* eslint-disable camelcase */
 
 const popUpWindow = document.getElementById('pop-up-window');
 const myRecentWork = document.getElementById('my-recent-work-section');
@@ -14,48 +15,38 @@ const closingButton = document.getElementById('button-closing-pop');
 
 const myDataArray = [
   {
-    title: 'Multipost stories',
-    snapshotPicSrc: './assets/snapshot-portfolio.png',
-    prgphContent: `A daily selection of privately personalized reads; no accounts or
-        sign-ups required. has been the industry's standard dummy text
-        ever since the 1500s, when an unknown printer took a standard
-        dummy text when an unknown printer took a standard.
-        deserunt dolore aliquid!`,
-    LanguagesBuildWith: ['html', 'Ruby on rails', 'css'],
-    seeLiveBtn: 'https://yannickzahinda.github.io/My-Portfolio-design/',
+    title: 'Children with disabilities',
+    snapshotPicSrc: './assets/children.png',
+    prgphContent: `This is a simple website build for children with desabilities, it talks about the inequality of chances
+    and discrimination they mostly face`,
+    LanguagesBuildWith: ['html', 'css', 'SASS', 'Javascript'],
+    seeLiveBtn: 'https://yannickzahinda.github.io/Capstone-project/',
+    seeSource: 'https://yannickzahinda.github.io/Capstone-project',
+  },
+  {
+    title: 'TV Maze',
+    snapshotPicSrc: './assets/films.png',
+    prgphContent: `This is a movies website that allow the user to see films displayed on the screen, taking data from API`,
+    LanguagesBuildWith: ['html', 'CSS', 'Javascript', 'Webpack', 'API documentation'],
+    seeLiveBtn: 'https://yannickzahinda.github.io/Javascript-group-capstone-project/',
     seeSource: 'https://github.com/YannickZahinda/My-Portfolio-design',
   },
   {
-    title: 'Multipost stories',
-    snapshotPicSrc: './assets/snapshot-portfolio.png',
-    prgphContent: `A daily selection of privately personalized reads; no accounts or
-        sign-ups required. has been re, explicabo repudiandae magnam deleniti obcaecati! Odit ipsam soluta doloremque velit autem deserunt dolore aliquid! the industry's standard dummy text
-        ever since the 1500s, 
-        dummy text. galley of type and scrambled it 1960s with the releaLorem Ipsum is simply,`,
-    LanguagesBuildWith: ['html', 'Ruby on rails', 'css'],
-    seeLiveBtn: 'https://yannickzahinda.github.io/My-Portfolio-design/',
+    title: 'Leaderboard',
+    snapshotPicSrc: './assets/leaderboard.png',
+    prgphContent: `This is a simple website that allows the user to record his score and see them displaying on the 
+    screen, the data are recorded on an API `,
+    LanguagesBuildWith: ['html', 'css', 'Javascript', 'Webpack', 'Api'],
+    seeLiveBtn: 'https://yannickzahinda.github.io/Leaderboard/',
     seeSource: 'https://github.com/YannickZahinda/My-Portfolio-design',
   },
   {
-    title: 'Multipost stories',
-    snapshotPicSrc: './assets/snapshot-portfolio.png',
-    prgphContent: `A daily selection of privately personalized reads; no accounts or
-        sign-ups required. re, explicabo repudiandae magnam deleniti obcaecati! Odit ipsam soluta doloremque velit autem deserunt dolore aliquid! has been the industry's standard dummy text
-        ever since the 1500s, 
-        dummy text.galley of type and scrambled it 1960s with the releaLorem Ipsum is simply,`,
-    LanguagesBuildWith: ['html', 'Ruby on rails', 'css'],
-    seeLiveBtn: 'https://yannickzahinda.github.io/My-Portfolio-design/',
-    seeSource: 'https://github.com/YannickZahinda/My-Portfolio-design',
-  },
-  {
-    title: 'Multipost stories',
-    snapshotPicSrc: './assets/snapshot-portfolio.png',
-    prgphContent: `A daily selection of privately personalized reads; no accounts or
-        sign-ups required. has been re, explicabo repudiandae magnam deleniti obcaecati! Odit ipsam soluta doloremque velit autem deserunt dolore aliquid! the industry's standard dummy text
-        ever since the 1500s, 
-        dummy text. galley of type and scrambled it 1960s with the releaLorem Ipsum is simply,`,
-    LanguagesBuildWith: ['html', 'Ruby on rails', 'css'],
-    seeLiveBtn: 'https://yannickzahinda.github.io/My-Portfolio-design/',
+    title: 'Math Magician',
+    snapshotPicSrc: './assets/Math.png',
+    prgphContent: `Math Magician is a single page application (SPA); for maths lovers ! it's a website that allows the user to
+    perform basics calculation with basics operator !`,
+    LanguagesBuildWith: ['html', 'css', 'javascript', 'react'],
+    seeLiveBtn: 'https://github.com/YannickZahinda/math-magician',
     seeSource: 'https://github.com/YannickZahinda/My-Portfolio-design',
   },
 ];
@@ -93,7 +84,7 @@ function onpenWindowDataIncluded(i) {
 myRecentWork.innerHTML = `
 <div class="multipost-stories-item">
         <div class="img-placeholder-container">
-          <img src="./assets/snapshot-portfolio.png" alt="snapshot-portfolio" class="snapshot">
+          <img src='${myDataArray[0].snapshotPicSrc}' alt="snapshot-portfolio" class="snapshot">
         </div>
         <div class="multipost-stories-container">
           <h6 class="multipost-stories-title">${myDataArray[0].title}</h6>
@@ -116,7 +107,7 @@ myRecentWork.innerHTML = `
 
       <div class="multipost-stories-item multipost-stories-item1">
         <div class="img-placeholder-container">
-          <img src="./assets/snapshot-portfolio.png" alt="snapshot-portfolio" class="snapshot">
+          <img src="${myDataArray[1].snapshotPicSrc}" alt="snapshot-portfolio" class="snapshot">
         </div>
         <div class="multipost-stories-container">
           <h6 class="multipost-stories-title">${myDataArray[1].title}</h6>
@@ -138,7 +129,7 @@ myRecentWork.innerHTML = `
       </div>
       <div class="multipost-stories-item">
         <div class="img-placeholder-container">
-          <img src="./assets/snapshot-portfolio.png" alt="snapshot-portfolio" class="snapshot">
+          <img src="${myDataArray[2].snapshotPicSrc}" alt="snapshot-portfolio" class="snapshot">
         </div>
         <div class="multipost-stories-container">
           <h6 class="multipost-stories-title">${myDataArray[2].title}</h6>
@@ -160,7 +151,7 @@ myRecentWork.innerHTML = `
       </div>
       <div class="multipost-stories-item multipost-stories-item1">
         <div class="img-placeholder-container">
-          <img src="./assets/snapshot-portfolio.png" alt="snapshot-portfolio" class="snapshot">
+          <img src="${myDataArray[3].snapshotPicSrc}" alt="snapshot-portfolio" class="snapshot">
         </div>
         <div class="multipost-stories-container">
           <h6 class="multipost-stories-title">${myDataArray[3].title}</h6>
